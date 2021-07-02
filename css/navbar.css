@@ -1,0 +1,92 @@
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  font-family: Ember;
+  color: white;
+}
+
+.search {
+  position: relative;
+}
+
+.search-field {
+  visibility: hidden;
+  max-width: 50px;
+  border: none;
+  font-size: 15px;
+  /* line-height: 15px; */
+  /* background: var(--header-bg-color); */
+  background: black;
+}
+
+.search-field::placeholder {
+  color: white;
+  padding-left: 25px;
+}
+
+.search-field:focus::placeholder {
+  padding: 0;
+}
+.search-field:focus {
+  outline: 1px solid white;
+  color: white;
+  padding-left: 25px;
+}
+
+.search-checkbox:checked ~ .search-field {
+  visibility: visible;
+  color: white;
+  border: none;
+  max-width: 150px;
+}
+.search-checkbox:checked ~ .search-field:focus {
+  padding-left: 25px;
+}
+
+.search-checkbox {
+  cursor: pointer;
+  position: absolute;
+  appearance: none;
+  margin: 0;
+}
+
+.search-checkbox::before {
+  content: "";
+  background: url(/media/icons/lupa.svg) no-repeat;
+  background-position:center;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  /* padding: 5px; */
+  top:2px;
+  left: 4px;
+}
+.search-checkbox:hover::before{
+  /* background-color:#f5f6f7; */
+  opacity: 0.8;
+}
+
+.user-profile {
+  display: inline-block;
+}
+
+.user-profile::before {
+  content: "";
+  background: url(/media/icons/usuario.svg) no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.user-profile:hover::before {
+  cursor: pointer;
+  opacity: 0.8;
+}

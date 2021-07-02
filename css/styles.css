@@ -1,0 +1,23 @@
+@font-face {
+  font-family: Ember;
+  src: url(/fonts/AmazonEmber_Rg.ttf);
+}
+
+:root {
+  --global-lat-padding:48px;
+  --header-height:70px;
+
+  --header-bg-color:rgb(26, 36, 46);
+
+  --bg-main-color: rgb(15, 23, 30)
+}
+
+body {
+  background-color: var(--bg-main-color);
+  color:white;
+}
+
+main {
+  margin-top: calc(var(--header-height) + 20px);
+  /* position: relative; */
+}

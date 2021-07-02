@@ -1,0 +1,140 @@
+:root {
+  --header-button-padding: 0.5rem;
+  --icon-size: 28px;
+  --icon-opacity: 0.5;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px var(--global-lat-padding);
+  height: var(--header-height);
+
+  display: flex;
+  align-items: center;
+}
+
+.main-logo {
+  font-family: Ember, Arial, sans-serif;
+}
+
+.main-logo a {
+  color: white;
+  padding: var(--header-button-padding);
+}
+
+.nav-list {
+  display: flex;
+  flex: 1;
+
+  padding: 0;
+  list-style: none;
+  font-family: Ember, Arial, sans-serif;
+}
+
+.nav-item a {
+  color: white;
+  outline: 1px solid green;
+  padding: var(--header-button-padding) 0.3rem;
+  margin: 0 0.3rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.search-checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.search-checkbox::before {
+  content: "";
+  background: url(/media/icons/lupa.svg);
+  outline: 1px solid red;
+  position: absolute;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  left: calc(-1 * var(--icon-size));
+  top: calc(-0.5 * var(--icon-size));
+}
+
+.search-checkbox:hover::before {
+  opacity: var(--icon-opacity);
+  cursor: pointer;
+}
+
+.search-checkbox:checked::before {
+  left: calc(var(--icon-size) * 0);
+}
+.search-checkbox:checked + .search-field {
+  display: initial;
+}
+
+.search-field {
+  display: none;
+  color: white;
+  outline: 1px solid rgba(255, 255, 255, var(--icon-opacity));
+  border: none;
+  background-color: var(--header-bg-color);
+  font-size: 16px;
+  font-family: Ember, Arial, sans-serif;
+  text-transform: capitalize;
+  padding: var(--header-button-padding) var(--header-button-padding)
+    var(--header-button-padding) calc(var(--icon-size) + 10px);
+}
+
+.search-field::placeholder {
+  color: rgba(255, 255, 255, var(--icon-opacity));
+}
+
+.user-profile {
+  flex: 1;
+  align-self: center;
+  /* border: calc(1rem + var(--header-button-padding)) solid greenyellow; */
+  position: relative;
+  margin-left: calc(var(--icon-size) + 16px);
+}
+
+.user-profile a {
+  color: white;
+  display: inline-block;
+  position: relative;
+  font-family: Ember, Arial, sans-serif;
+  outline: 2px dotted blue;
+  padding: var(--header-button-padding);
+}
+
+.user-profile a:hover {
+  opacity: var(--icon-opacity);
+}
+
+.user-profile a::before {
+  content: "";
+  background: url(/media/icons/usuario.svg) no-repeat;
+  outline: 1px solid red;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  position: absolute;
+  align-self: center;
+  left: calc(-1 * var(--icon-size));
+  /* top: calc(var(--icon-size) - var(--header-button-padding)); */
+  top: 10%;
+  /* top: 4px; */
+}
+
+.user-profile:hover::before {
+  cursor: pointer;
+  opacity: var(--icon-opacity);
+}
