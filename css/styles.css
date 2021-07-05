@@ -4,11 +4,6 @@
 }
 
 :root {
-  --global-lat-padding:48px;
-  --header-height:70px;
-
-  --header-bg-color:rgb(26, 36, 46);
-
   --bg-main-color: rgb(15, 23, 30);
   --highlight: rgb(121, 184, 230); /* HEX #79b8e6 */
 }
@@ -16,9 +11,11 @@
 body {
   background-color: var(--bg-main-color);
   color:white;
+  font-family: Ember, Arial, sans-serif;
 }
 
 main {
-  margin-top: calc(var(--header-height) + 20px);
+  margin-top: 5rem;
   /* position: relative; */
+  /* z-index: 10; */
 }

@@ -7,24 +7,33 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/header.css" />
-    <!-- <link rel="stylesheet" href="/css/navbar.css" /> -->
+    <link rel="stylesheet" href="/css/navbar.css" />
     <title>Document</title>
   </head>
   <body>
+    
     <header>
-      <div class="main-logo">
-        <a href="#">
-          <img src="/media/icons/logo.svg" alt="Logo de Nice Video" />
-        </a>
-      </div>
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#">Novedades</a></li>
-        <li class="nav-item"><a href="#">Series</a></li>
-        <li class="nav-item"><a href="#">Películas</a></li>
-        <li class="nav-item"><a href="#">Favoritos</a></li>
-      </ul>
+      <a href="#Cosas">
+        <div class="main-logo"></div>
+      </a>
+      <div class="nav-explore">
+        <label for="explore">Explorar</label>
+        <input type="checkbox" name="explore" id="explore" />
 
-      <div class="header-right">
+        <nav class="nav-container">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">Novedades</a></li>
+            <li class="nav-item"><a href="#">Series</a></li>
+            <li class="nav-item"><a href="#">Películas</a></li>
+            <li class="nav-item"><a href="#">Favoritos</a></li>
+          </ul>
+        </nav>
+        <div class="cover"></div>
+      </div>
+
+      
+
+      <!-- <div class="header-right">
         <div class="search">
           <input type="checkbox" class="search-checkbox" />
           <input type="text" class="search-field" placeholder="Buscar" />
@@ -33,7 +42,7 @@
         <div class="user-profile">
           <a href="#">Usuario &beta;</a>
         </div>
-      </div>
+      </div> -->
     </header>
 
     <main>
