@@ -1,1 +1,1 @@
-# Web simulando Netflix solo usando HTML y CSS
+# Web simulando Amazon Prime Video solo usando HTML y CSS

@@ -1,13 +1,16 @@
 :root {
   --header-height: 3.5rem;
-  --header-bg-color: rgb(26, 36, 46);
+  /* --header-bg-color: rgb(26, 36, 46); */
+  --header-bg-color: linear-gradient(180deg, #1b2530 0, rgba(27, 37, 48, 0.85));
   --header-button-padding: 0.5rem;
   --icon-size: 28px;
   --icon-opacity: 0.6;
 }
 
 header {
-  background-color: var(--header-bg-color);
+  background-image: var(--header-bg-color);
+  background-repeat: repeat-x;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -24,7 +27,6 @@ header {
   background-size: contain;
   height: 32px;
   width: 135px;
-  
 }
 
 .nav-explore {
@@ -36,7 +38,7 @@ header {
 .nav-explore > label {
   opacity: 0.7;
   font-size: 15px;
-  padding: .5rem;
+  padding: 0.5rem;
   cursor: pointer;
 }
 
@@ -104,23 +106,19 @@ header {
 
 .nav-list {
   background-color: #252e39;
-  height: 40vh;
+  height: 30vh;
   list-style: none;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-} 
+}
 
 .nav-item {
   flex: 1;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #323e4c;
-}
-
-.nav-list > .nav-item:first-child {
-  /* margin-left: 0.5rem; */
 }
 
 .nav-item a {
