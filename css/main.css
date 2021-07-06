@@ -1,0 +1,123 @@
+:root {
+  --img-min-height: 105px;
+  --imgXL-min-height: 182px;
+}
+
+.hidden-title {
+  visibility: hidden;
+  position: absolute;
+  height: 0;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  overflow-x: scroll;
+
+  /* Estilos del scroll lateral para firefox */
+  scrollbar-color: rgba(255, 255, 255, 0.4) #252e39;
+  scrollbar-width: thin;
+}
+
+/* Estilos del scroll lateral para chrome */
+.grid-wrapper::-webkit-scrollbar {
+  height: 0.25rem;
+}
+
+.grid-wrapper::-webkit-scrollbar-track {
+  /* background-color:#323e4c; */
+  background-color: #252e39;
+}
+
+.grid-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.section {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section > h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+  text-transform: capitalize;
+}
+
+
+.flex-row {
+  display: flex;
+}
+
+.card-container {
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+  margin-bottom: .3rem;
+  width: 45vw;
+  min-width: 185px;
+}
+
+.card-img-1 {
+  background: url(/media/jpg/img-1.jpg) top/cover;
+  height: var(--img-min-height);
+
+}
+
+.card-img-2 {
+  background: url(/media/jpg/img-2.jpg) top/cover;
+  height: var(--img-min-height);
+}
+
+.card-img-3 {
+  background: url(/media/jpg/img-3.jpg) top/cover;
+  height: var(--img-min-height);
+}
+
+.card-img-4 {
+  background: url(/media/jpg/img-4.jpg) top/cover;
+  height: var(--img-min-height);
+}
+
+.card-img-5 {
+  background: url(/media/jpg/img-5.jpg) top/cover;
+  height: var(--img-min-height);
+}
+
+.card-img-6 {
+  background: url(/media/jpg/img-6.jpg) top/cover;
+  height: var(--img-min-height);
+}
+
+.card-img-7 {
+  background: url(/media/jpg/img-7.jpg) top/cover;
+  height: var(--img-min-height);
+}
+
+.card-img-8 {
+  background: url(/media/jpg/img-8.jpg) top/cover;
+  height: var(--img-min-height);
+}
+
+.card-container-xl {
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+  margin-bottom: .3rem;
+  width: 80vw;
+  min-width: 420px;
+}
+
+.card-img-xl-1 {
+  background: url(/media/jpg/img-5.jpg) center/cover;
+  height: var(--imgXL-min-height);
+}
+
+.card-img-xl-2 {
+  background: url(/media/jpg/img-3.jpg) center/cover;
+  height: var(--imgXL-min-height);
+}
+
+.card-img-xl-3 {
+  background: url(/media/jpg/img-4.jpg) center/cover;
+  height: var(--imgXL-min-height);
+}

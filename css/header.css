@@ -1,7 +1,7 @@
 :root {
   --header-height: 3.5rem;
   /* --header-bg-color: rgb(26, 36, 46); */
-  --header-bg-color: linear-gradient(180deg, #1b2530 0, rgba(27, 37, 48, 0.85));
+  --header-bg-color: linear-gradient(180deg, #1b2530 0, rgb(27, 37, 48));
   --header-button-padding: 0.5rem;
   --icon-size: 28px;
   --icon-opacity: 0.6;
@@ -31,7 +31,7 @@ header {
 
 .nav-explore {
   position: relative;
-  left: -1rem;
+  left: -1.8rem;
   z-index: 9999;
 }
 

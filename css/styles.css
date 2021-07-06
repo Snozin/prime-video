@@ -8,6 +8,10 @@
   --highlight: rgb(121, 184, 230); /* HEX #79b8e6 */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-main-color);
   color:white;

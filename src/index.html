@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main.css" />
     <title>Document</title>
   </head>
   <body>
-    
     <header>
-      <a href="#Cosas">
+      <a href="#main">
         <div class="main-logo"></div>
       </a>
       <div class="nav-explore">
@@ -21,16 +21,14 @@
 
         <nav class="nav-container">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#">Novedades</a></li>
-            <li class="nav-item"><a href="#">Series</a></li>
-            <li class="nav-item"><a href="#">Películas</a></li>
-            <li class="nav-item"><a href="#">Favoritos</a></li>
+            <li class="nav-item"><a href="#novedades">Novedades</a></li>
+            <li class="nav-item"><a href="#series">Series</a></li>
+            <li class="nav-item"><a href="#peliculas">Películas</a></li>
+            <li class="nav-item"><a href="#favoritos">Favoritos</a></li>
           </ul>
         </nav>
         <div class="cover"></div>
       </div>
-
-      
 
       <!-- <div class="header-right">
         <div class="search">
@@ -44,64 +42,133 @@
       </div> -->
     </header>
 
-    <main>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maiores
-        provident explicabo, natus accusamus, deserunt suscipit optio amet
-        repudiandae inventore nihil aliquam ipsum quasi harum nostrum
-        perspiciatis, distinctio debitis voluptatibus.
-      </p>
-      <p>
-        Aut quasi natus quisquam tenetur illo, temporibus laboriosam vitae
-        pariatur non autem debitis? Modi distinctio quod facere quam amet optio
-        doloribus quae, voluptatibus odio aliquid esse, porro ad cupiditate quo.
-      </p>
-      <p>
-        Temporibus sed ullam dolores dolorum quasi nulla consequatur eius
-        architecto laboriosam ut dicta minima fugiat sapiente dignissimos porro,
-        odit ex quam labore libero, assumenda quod! Neque quasi ad maiores sed.
-      </p>
-      <p>
-        Ipsum ad tempora nulla voluptas eos fuga. Id suscipit nostrum dolores
-        saepe cum illo explicabo earum eos iusto? Impedit maiores accusantium
-        beatae non itaque exercitationem perspiciatis architecto? Qui,
-        praesentium odit?
-      </p>
-      <p>
-        Ab, alias laudantium dolores laboriosam earum laborum cum architecto
-        illum sunt quam explicabo quibusdam cupiditate dolorum dolore,
-        aspernatur animi praesentium aut error id esse saepe? Dicta neque quas
-        itaque quis.
-      </p>
-      <p>
-        Dolore iure natus dicta blanditiis vitae cumque illo? Minus cum non quam
-        excepturi quaerat facilis voluptates fuga enim aliquid illum
-        reprehenderit voluptate, id velit facere ipsam sit, dolore est omnis?
-      </p>
-      <p>
-        Voluptate obcaecati rerum, quae ex iure tempora dolores dolorum itaque
-        et, eos cumque mollitia! Sapiente ipsam necessitatibus qui aliquid
-        voluptatibus corrupti quo ab reprehenderit incidunt. Nostrum cumque
-        animi veritatis natus?
-      </p>
-      <p>
-        Iure, enim minima! Et corporis dolore cum eos odit, laboriosam dolores
-        non, animi fugiat vero eius culpa, esse ex. A quod mollitia vel sequi
-        repudiandae voluptas cum dolor fugit rerum.
-      </p>
-      <p>
-        Nostrum, nulla veniam. Tenetur, aperiam beatae. Voluptates incidunt modi
-        sit sint enim repellendus assumenda soluta obcaecati eligendi commodi ex
-        reprehenderit excepturi totam minima velit adipisci, ea nobis ducimus,
-        omnis inventore?
-      </p>
-      <p>
-        Unde, blanditiis nisi asperiores possimus aut inventore rem alias
-        repellat minus obcaecati! Numquam odit, amet tenetur non iste debitis
-        maxime magni sunt id maiores laborum. Commodi iste doloribus
-        accusantium! Deserunt?
-      </p>
+    <main id="main">
+      <h1 class="hidden-title">Todo lo que quieres ver</h1>
+
+      <section class="section" id="novedades">
+        <h2>novedades</h2>
+        <div class="grid-wrapper">
+          <div class="flex-row">
+            <div class="card-container">
+              <a href="">
+                <div class="card-img-6"></div>
+              </a>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-1"></div>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-4"></div>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-3"></div>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-5"></div>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-2"></div>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-7"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="series">
+        <h2>series destacadas</h2>
+        <div class="grid-wrapper">
+          <div class="flex-row">
+
+            <div class="card-container-xl">
+              <a href="">
+                <div class="card-img-xl-1"></div>
+              </a>
+            </div>
+
+            <div class="card-container-xl">
+              <a href="">
+                <div class="card-img-xl-2"></div>
+              </a>
+            </div>
+
+            <div class="card-container-xl">
+              <a href="">
+                <div class="card-img-xl-3"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="peliculas">
+        <h2>películas para ti</h2>
+        <div class="grid-wrapper">
+          <div class="flex-row">
+            <div class="card-container">
+              <a href="">
+                <div class="card-img-4"></div>
+              </a>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-5"></div>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-6"></div>
+            </div>
+            <div class="card-container">
+              <div class="card-img-1"></div>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-6"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="favoritos">
+        <h2>favoritos</h2>
+        <div class="grid-wrapper">
+          <div class="flex-row">
+            <div class="card-container">
+              <a href="">
+                <div class="card-img-6"></div>
+              </a>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-3"></div>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-2"></div>
+            </div>
+
+            <div class="card-container">
+              <div class="card-img-5"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- <span class="title">Soy una serie muy loca</span>
+        <p class="synopsis">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quae
+          tempore, suscipit dolore officiis culpa deserunt adipisci rem eveniet
+          facilis natus itaque deleniti earum aliquid dolores! Sequi aliquam
+          itaque quas!
+        </p> -->
 
     <footer></footer>
   </body>
