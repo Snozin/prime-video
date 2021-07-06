@@ -6,7 +6,6 @@
 .hidden-title {
   visibility: hidden;
   position: absolute;
-  height: 0;
 }
 
 .grid-wrapper {
@@ -41,10 +40,18 @@
 .section > h2 {
   margin: 0;
   font-size: 1.2rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   text-transform: capitalize;
 }
 
+.section.intro {
+  margin-left: 0;
+  margin-top: var(--header-height);
+}
+
+.section.intro div[class^="card-img-xl"] {
+  height: 192px;
+}
 
 .flex-row {
   display: flex;
@@ -53,7 +60,7 @@
 .card-container {
   flex-shrink: 0;
   margin-right: 0.5rem;
-  margin-bottom: .3rem;
+  margin-bottom: 0.5rem;
   width: 45vw;
   min-width: 185px;
 }
@@ -61,7 +68,6 @@
 .card-img-1 {
   background: url(/media/jpg/img-1.jpg) top/cover;
   height: var(--img-min-height);
-
 }
 
 .card-img-2 {
@@ -102,7 +108,7 @@
 .card-container-xl {
   flex-shrink: 0;
   margin-right: 0.5rem;
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
   width: 80vw;
   min-width: 420px;
 }
