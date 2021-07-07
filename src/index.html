@@ -7,39 +7,43 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <a href="#main">
-        <div class="main-logo"></div>
-      </a>
-      <div class="nav-explore">
-        <label for="explore">Explorar</label>
-        <input type="checkbox" name="explore" id="explore" />
+    <header class="header">
+      <div class="header-container">
+        <a href="#">
+          <div class="main-logo"></div>
+        </a>
 
-        <nav class="nav-container">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#novedades">Novedades</a></li>
-            <li class="nav-item"><a href="#series">Series</a></li>
-            <li class="nav-item"><a href="#peliculas">Películas</a></li>
-            <li class="nav-item"><a href="#favoritos">Favoritos</a></li>
-          </ul>
-        </nav>
-        <div class="cover"></div>
+        <div class="nav-container">
+          <label for="explore">Explorar</label>
+          <input type="checkbox" name="explore" id="explore" />
+
+          <nav class="nav-subcontainer">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#novedades">Novedades</a></li>
+              <li class="nav-item"><a href="#series">Series</a></li>
+              <li class="nav-item"><a href="#peliculas">Películas</a></li>
+              <li class="nav-item"><a href="#favoritos">Favoritos</a></li>
+            </ul>
+          </nav>
+          <div class="shadow-filter"></div>
+
+          <!-- <div class="header-right">
+            <div class="search">
+              <input type="checkbox" class="search-checkbox" />
+              <input type="text" class="search-field" placeholder="Buscar" />
+            </div>
+
+            <div class="user-profile">
+              <a href="#">usuario &beta;</a>
+            </div>
+          </div> -->
+        </div>
       </div>
-
-      <!-- <div class="header-right">
-        <div class="search">
-          <input type="checkbox" class="search-checkbox" />
-          <input type="text" class="search-field" placeholder="Buscar" />
-        </div>
-
-        <div class="user-profile">
-          <a href="#">Usuario &beta;</a>
-        </div>
-      </div> -->
     </header>
 
     <main id="main">
@@ -61,7 +65,6 @@
             <div class="card-container-xl">
               <div class="card-img-xl-3"></div>
             </div>
-
           </div>
         </div>
       </section>
@@ -107,7 +110,6 @@
         <h2>series destacadas</h2>
         <div class="grid-wrapper">
           <div class="flex-row">
-
             <div class="card-container-xl">
               <a href="">
                 <div class="card-img-xl-1"></div>
@@ -157,23 +159,23 @@
           <div class="flex-row">
             <div class="card-container">
               <a href="">
-                <div class="card-img-4"></div>
+                <div class="card-img-1"></div>
               </a>
             </div>
 
             <div class="card-container">
-              <div class="card-img-5"></div>
+              <div class="card-img-8"></div>
             </div>
 
             <div class="card-container">
-              <div class="card-img-6"></div>
+              <div class="card-img-2"></div>
             </div>
             <div class="card-container">
-              <div class="card-img-1"></div>
+              <div class="card-img-7"></div>
             </div>
 
             <div class="card-container">
-              <div class="card-img-6"></div>
+              <div class="card-img-3"></div>
             </div>
           </div>
         </div>
@@ -204,14 +206,6 @@
         </div>
       </section>
     </main>
-
-    <!-- <span class="title">Soy una serie muy loca</span>
-        <p class="synopsis">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quae
-          tempore, suscipit dolore officiis culpa deserunt adipisci rem eveniet
-          facilis natus itaque deleniti earum aliquid dolores! Sequi aliquam
-          itaque quas!
-        </p> -->
 
     <footer></footer>
   </body>

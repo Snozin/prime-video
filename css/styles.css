@@ -1,6 +1,10 @@
 @font-face {
   font-family: Ember;
-  src: url(/fonts/AmazonEmber_Rg.ttf);
+  src: url(/fonts/Ember_Rg.ttf);
+}
+@font-face {
+  font-family: 'Ember Display';
+  src: url(/fonts/EmberDisplay_Rg.ttf);
 }
 
 :root {
@@ -16,10 +20,4 @@ body {
   background-color: var(--bg-main-color);
   color:white;
   font-family: Ember, Arial, sans-serif;
-}
-
-main {
-  /* margin-top: 5rem; */
-  /* position: relative; */
-  /* z-index: 10; */
 }

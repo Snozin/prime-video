@@ -1,229 +1,43 @@
 :root {
+  /* header hight: 56, 72, 80 */
   --header-height: 3.5rem;
-  /* --header-bg-color: rgb(26, 36, 46); */
   --header-bg-color: linear-gradient(180deg, #1b2530 0, rgb(27, 37, 48));
   --header-button-padding: 0.5rem;
-  --icon-size: 28px;
+  --icon-size: 18px;
   --icon-opacity: 0.6;
 }
 
-header {
-  background-image: var(--header-bg-color);
-  background-repeat: repeat-x;
-
+.header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding: 0.5rem 1rem;
-  height: var(--header-height);
+  padding: 0 1rem;
+  background-image: var(--header-bg-color);
+}
 
+.header-container {
   display: flex;
+  height: var(--header-height);
+  justify-content: space-between;
   align-items: center;
 }
 
 .main-logo {
-  background: url(/media/icons/prime_video_logo.svg) left no-repeat;
+  background: url(/media/icons/prime_video_logo.svg) no-repeat;
   background-size: contain;
   height: 32px;
   width: 135px;
 }
 
-.nav-explore {
-  position: relative;
-  left: -1.8rem;
-  z-index: 9999;
-}
-
-.nav-explore > label {
-  opacity: 0.7;
-  font-size: 15px;
-  padding: 0.5rem;
-  cursor: pointer;
-}
-
-.nav-explore #explore {
-  appearance: none;
-  position: absolute;
-}
-
-.nav-explore #explore::after {
-  content: "";
-  background: url(/media/icons/arrow-down.svg) center;
-  background-size: cover;
-  position: absolute;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  left: 0.25rem;
-  top: 0.25rem;
-  opacity: 0.7;
-
-  animation: rotate_arrow_down 1s forwards;
-}
-
-.nav-explore #explore:checked::after {
-  animation: rotate_arrow_up 1s forwards;
-}
-
-@keyframes rotate_arrow_up {
-  to {
-    transform: rotate(180deg);
-  }
-}
-@keyframes rotate_arrow_down {
-  from {
-    transform: rotate(180deg);
-  }
-  to {
-    transform: rotate(0deg);
+@media screen and (min-width: 768px) {
+  .header-container {
+    --header-height: 4.5rem;
   }
 }
 
-.nav-explore > #explore:checked ~ .nav-container {
-  display: block;
-}
-
-.nav-explore > #explore:checked ~ .cover {
-  display: block;
-}
-
-.nav-container {
-  display: none;
-  position: fixed;
-  top: var(--header-height);
-  left: 0;
-  right: 0;
-  height: 100vh;
-  z-index: 9999;
-}
-
-.nav-list,
-.nav-item {
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list {
-  background-color: #252e39;
-  height: 30vh;
-  list-style: none;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.nav-item {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #323e4c;
-}
-
-.nav-item a {
-  color: white;
-  padding: 1rem 0.3rem;
-  margin: 0 0.3rem;
-}
-
-.nav-item a:hover {
-  color: var(--highlight);
-}
-
-.cover {
-  display: none;
-  position: fixed;
-  min-width: 100vw;
-  min-height: 100vh;
-  top: var(--header-height);
-  left: 0;
-  background-color: #06090c;
-  opacity: 0.6;
-  z-index: 8999;
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-
-  position: relative;
-}
-
-.search-checkbox {
-  appearance: none;
-  position: absolute;
-}
-
-.search-checkbox::before {
-  content: "";
-  background: url(/media/icons/lupa.svg);
-  position: absolute;
-  width: var(--icon-size);
-  height: var(--icon-size);
-  left: calc(-1 * var(--icon-size));
-  top: calc(-0.5 * var(--icon-size));
-}
-
-.search-checkbox:hover::before {
-  opacity: var(--icon-opacity);
-  cursor: pointer;
-}
-
-.search-checkbox:checked::before {
-  left: 0;
-}
-.search-checkbox:checked + .search-field {
-  display: initial;
-}
-
-.search-field {
-  display: none;
-  color: white;
-  outline: 1px solid rgba(255, 255, 255, var(--icon-opacity));
-  border: none;
-  background-color: var(--header-bg-color);
-  font-size: 16px;
-  text-transform: capitalize;
-  padding: var(--header-button-padding) var(--header-button-padding)
-    var(--header-button-padding) calc(var(--icon-size) + 10px);
-}
-
-.search-field::placeholder {
-  color: rgba(255, 255, 255, var(--icon-opacity));
-}
-
-.user-profile {
-  flex: 1;
-  align-self: center;
-  position: relative;
-  margin-left: calc(var(--icon-size) + 16px);
-  margin-right: 20px;
-}
-
-.user-profile a {
-  color: white;
-  display: inline-block;
-  position: relative;
-  padding: var(--header-button-padding);
-}
-
-.user-profile a:hover {
-  opacity: var(--icon-opacity);
-}
-
-.user-profile a::before {
-  content: "";
-  background: url(/media/icons/usuario.svg) no-repeat;
-  width: var(--icon-size);
-  height: var(--icon-size);
-  position: absolute;
-  align-self: center;
-  left: calc(-1 * var(--icon-size));
-  top: 10%;
+@media screen and (min-width: 1024px) {
+  .header-container {
+    --header-height: 5rem;
+  }
 }
