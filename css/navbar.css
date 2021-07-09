@@ -82,7 +82,6 @@
 
 .nav-list {
   background-color: #252e39;
-  height: 30vh;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -99,13 +98,10 @@
 .nav-item a {
   color: white;
   padding: 1rem 1rem;
-  /* margin: 0 1rem; */
 }
 
 .slide-container {
   overflow: hidden;
-  /* overflow-x: scroll; */
-
   display: flex;
   align-items: center;
   align-content: center;
@@ -145,7 +141,6 @@
   position: relative;
   top: -8px;
   border: none;
-  height: calc(100% - 2px);
   background-color: #151e26;
   color: white;
 }
@@ -171,6 +166,18 @@
   display: none;
 }
 
+.shadow-filter {
+  display: none;
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  top: var(--header-height);
+  left: 0;
+  background-color: #06090c;
+  opacity: 0.6;
+  z-index: 8999;
+}
+
 @media screen and (min-width: 1024px) {
   .nav-container {
     display: flex;
@@ -183,23 +190,19 @@
   }
 
   .nav-subcontainer {
-    flex: 1;
     position: static;
     display: initial;
-    height: auto;
   }
 
   .nav-list {
     flex-direction: row;
     justify-content: flex-start;
-    height: auto;
     background: none;
   }
 
   .nav-item {
     flex: 0;
     border: none;
-    line-height: 2rem;
   }
 
   .nav-item a {
@@ -214,51 +217,14 @@
     color: var(--highlight);
   }
 
-  .search {
-    position: relative;
-    height: 1.5rem;
-  }
-
-  .search-checkbox {
-    appearance: none;
-    margin-right: 1rem;
-  }
-
   .search-checkbox::after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    width: var(--icon-size);
-    height: var(--icon-size);
-    --icon-size: 1.5rem;
-    background: url(/media/icons/lupa.svg);
-    top: 0;
-    /* top: calc(-0.5 * var(--icon-size)); */
     cursor: pointer;
   }
 
   .search-field {
-    display: none;
-    color: white;
-    border: none;
     top: -6px;
     height: calc(100% - 4px);
-    outline: 1px solid rgba(255, 255, 255, var(--icon-opacity));
-    background-color: #151e26;
     font-size: 1.2rem;
     text-transform: capitalize;
-    /* max-width: 200px; */
   }
-}
-
-.shadow-filter {
-  display: none;
-  position: fixed;
-  min-width: 100vw;
-  min-height: 100vh;
-  top: var(--header-height);
-  left: 0;
-  background-color: #06090c;
-  opacity: 0.6;
-  z-index: 8999;
 }
