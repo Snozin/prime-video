@@ -3,8 +3,6 @@
   --header-height: 3.5rem;
   --header-bg-color: linear-gradient(180deg, #1b2530 0, rgb(27, 37, 48));
   --header-button-padding: 0.5rem;
-  --icon-size: 18px;
-  --icon-opacity: 0.6;
 }
 
 .header {

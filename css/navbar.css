@@ -1,3 +1,7 @@
+:root {
+  --icon-opacity: 0.6;
+}
+
 .nav-container {
   flex: 1;
   position: relative;
@@ -12,9 +16,10 @@
 }
 
 .nav-container .menu-label > label {
-  opacity: 0.7;
+  opacity: var(--icon-opacity);
   font-size: 1rem;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .nav-container #explore {
@@ -32,8 +37,9 @@
   height: 10px;
   left: -0.2rem;
   top: 0.25rem;
-  opacity: 0.7;
-
+  opacity:var(--icon-opacity);
+  cursor: pointer;
+  /* Llamada a la animación para girar la flecha del menú desplegable */
   animation: rotate_arrow_down 0.5s forwards;
 }
 
@@ -41,6 +47,7 @@
   animation: rotate_arrow_up 0.5s forwards;
 }
 
+/* Definición de las animaciones de rotación */
 @keyframes rotate_arrow_up {
   to {
     transform: rotate(180deg);
@@ -128,6 +135,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  opacity: var(--icon-opacity);
 }
 
 .search-checkbox:checked ~ .search-field {
@@ -157,6 +166,7 @@
 .user-profile .user-icon::after {
   content: "";
   background: url(/media/icons/usuario.svg) no-repeat;
+  opacity: var(--icon-opacity);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -217,8 +227,8 @@
     color: var(--highlight);
   }
 
-  .search-checkbox::after {
-    cursor: pointer;
+  .search-checkbox:hover::after {
+    opacity: 1;
   }
 
   .search-field {
@@ -226,5 +236,9 @@
     height: calc(100% - 4px);
     font-size: 1.2rem;
     text-transform: capitalize;
+  }
+
+  .user-profile .user-icon:hover::after {
+    opacity: 1;
   }
 }
