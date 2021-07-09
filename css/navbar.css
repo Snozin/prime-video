@@ -89,7 +89,6 @@
 
 .nav-list {
   background-color: #252e39;
-  list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;

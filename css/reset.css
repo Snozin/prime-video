@@ -11,10 +11,15 @@ body {
   padding: 0;
 }
 
-img, video {
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
+}
+
+ul, ol {
+  list-style:none;
+  padding: 0;
+}
+
+img, video {
+  max-width: 100%;
 }

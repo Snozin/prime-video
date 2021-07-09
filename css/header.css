@@ -1,5 +1,4 @@
 :root {
-  /* header hight: 56, 72, 80 */
   --header-height: 3.5rem;
   --header-bg-color: linear-gradient(180deg, #1b2530 0, rgb(27, 37, 48));
   --header-button-padding: 0.5rem;
