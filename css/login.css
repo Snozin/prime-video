@@ -1,0 +1,30 @@
+main {
+  height: 100vh;
+  display: grid;
+}
+
+
+.form-wrapper {
+  border: 1px solid limegreen;
+  
+  display: grid;
+  margin:auto;
+  width: 70vw;
+
+  justify-content: center;
+  /* align-content: center; */
+
+
+  /* grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 3fr .5fr;
+  grid-template-areas: 
+    ". . ."
+    ". form ."
+    ". . ."; */
+}
+
+.form-content{
+  /* grid-area: form; */
+  /* margin: auto; */
+  border: 1px solid red;
+}
