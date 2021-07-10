@@ -46,12 +46,13 @@
   margin-top: var(--header-height);
 }
 
-.section.intro div[class^="card-img-xl"] {
+/* .section.intro div[class^="card-img-xl"] {
   height: 192px;
-}
+} */
 
 .flex-row {
   display: flex;
+  margin: 0;
 }
 
 .card-container {
@@ -62,62 +63,25 @@
   min-width: 185px;
 }
 
-.card-container a img {
-  width: 100%;
-  height: var(--img-min-height);
-  object-fit: cover;
-}
-
-.card-info {
-  display: none;
-}
-
-.card-img-1 {
-  background: url(/media/img/img-1.jpg) top/cover;
-  height: var(--img-min-height);
-}
-
-.card-img-2 {
-  background: url(/media/img/img-2.jpg) top/cover;
-  height: var(--img-min-height);
-}
-
-.card-img-3 {
-  background: url(/media/img/img-3.jpg) top/cover;
-  height: var(--img-min-height);
-}
-
-.card-img-4 {
-  background: url(/media/img/img-4.jpg) top/cover;
-  height: var(--img-min-height);
-}
-
-.card-img-5 {
-  background: url(/media/img/img-5.jpg) top/cover;
-  height: var(--img-min-height);
-}
-
-.card-img-6 {
-  background: url(/media/img/img-6.jpg) top/cover;
-  height: var(--img-min-height);
-}
-
-.card-img-7 {
-  background: url(/media/img/img-7.jpg) top/cover;
-  height: var(--img-min-height);
-}
-
-.card-img-8 {
-  background: url(/media/img/img-8.jpg) top/cover;
-  height: var(--img-min-height);
-}
-
-.card-container-xl {
+.card-container-hero, .card-container-xl {
   flex-shrink: 0;
   margin-right: 0.5rem;
   margin-bottom: 0.3rem;
-  width: 80vw;
-  min-width: 420px;
+  width: 100vw;
+  height: 30vh;
+}
+
+.card-container a img, .card-container-hero a img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-container a img {
+  height: var(--img-min-height);
+}
+
+.card-container-hero a img {
+  height: 100%;
 }
 
 .card-img-xl-1 {
@@ -135,9 +99,18 @@
   height: var(--imgXL-min-height);
 }
 
+.card-info {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .section {
     margin-left: 50px;
+  }
+
+  .card-container-hero {
+    width: calc(100vw - 0.5rem);
+    height: 40vh;
   }
 
   .card-container {
@@ -146,7 +119,7 @@
     height: 20vh;
   }
 
-  .card-container a img {
+  .card-container-hero a img, .card-container a img {
     height: 100%;
   }
 
@@ -227,4 +200,5 @@
   .fav-icon >input:checked::after {
     background: url(/media/icons/heart.svg) center no-repeat;
   }
+
 }
