@@ -11,6 +11,7 @@
   right: 0;
   padding: 0 1rem;
   background-image: var(--header-bg-color);
+  z-index: 9999;
 }
 
 .header-container {
