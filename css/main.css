@@ -174,7 +174,7 @@
   }
 
   .fav-icon > input::after {
-    background: url(/media/icons/heart-empty.svg) center no-repeat;
+    background: url(media/icons/heart-empty.svg) center no-repeat;
     content: "";
     position: absolute;
     width: 100%;
@@ -183,7 +183,7 @@
   }
 
   .fav-icon >input:checked::after {
-    background: url(/media/icons/heart.svg) center no-repeat;
+    background: url(media/icons/heart.svg) center no-repeat;
   }
 
 }
