@@ -12,33 +12,42 @@
     <title>Prime Video</title>
   </head>
   <body>
-
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container">
         <a href="#">
           <div class="main-logo"></div>
         </a>
-        </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
-      <div class="form-wrapper">
+      <div class="login-wrapper">
         <div class="form-content">
-          <h1>Bienvenidos a Prime Video</h1>
-          <form action="">
+          <h1>Bienvenidos a <span>Prime</span> Video</h1>
+
+          <form action="index.html">
             <label for="usuario">Dinos tu email</label>
-            <input type="email" id="usuario">
-            
-            <label for="passwd">Elige una contraseña</label>
-            <input type="password" name="passwd" id="passwd">
-            
+            <input
+              type="email"
+              id="usuario"
+              placeholder="nombre@email.com"
+              required
+            />
+
+            <label for="passwd">Elige contraseña</label>
+            <input
+              type="password"
+              name="passwd"
+              id="passwd"
+              placeholder="Secr3t!"
+              required
+            />
+
             <button type="reset">Limpiar</button>
             <button type="submit">Enviar</button>
-            
-            <a href="">¿No recuerdas tu contraseña?</a>
-          </form>
 
+            <a href="">¿Contraseña Olvidada?</a>
+          </form>
         </div>
       </div>
     </main>
