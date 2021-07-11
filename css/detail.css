@@ -59,6 +59,10 @@ main {
   margin-bottom: 1em;
 }
 
+.detail-synopsis p a {
+  color: var(--highlight);
+}
+
 .cast, .genre {
   padding: .5em 0;
 }
