@@ -1,5 +1,5 @@
 :root {
-  --header-height: 3.5rem;
+  --header-height: 4em;
   --header-bg-color: linear-gradient(180deg, #1b2530 0, rgb(27, 37, 48));
   --header-button-padding: 0.5rem;
 }
@@ -30,12 +30,12 @@
 
 @media screen and (min-width: 768px) {
   .header-container {
-    --header-height: 4.5rem;
+    --header-height: 4.5em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .header-container {
-    --header-height: 5rem;
+    --header-height: 5em;
   }
 }

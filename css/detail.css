@@ -1,0 +1,118 @@
+h1,
+h2{
+  margin: 0;
+}
+
+h1 {
+  font-family: "Ember Display", Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+h2 {
+  opacity: 0.4;
+  font-size: 1.2em;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+main {
+  margin-top: var(--header-height);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  margin-bottom: 0.5em;
+}
+
+.video-wrapper video {
+  position: absolute;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.detail-wrapper {
+  padding: 0 1em;
+}
+
+.detail-info {
+  font-family: monospace;
+  margin: 0.5em 0;
+  font-weight: bold;
+  opacity: 0.4;
+}
+
+.detail-info span:nth-child(2) {
+  padding: 0.2em 0.4em;
+  border-radius: 0.3em;
+  box-shadow: inset 1px 1px rgb(255, 255, 255),
+    inset -1px -1px rgb(255, 255, 255), inset -1px 1px rgb(255, 255, 255),
+    inset 1px -1px rgb(255, 255, 255);
+}
+
+.detail-synopsis p:last-child {
+  margin-bottom: 1em;
+}
+
+.cast, .genre {
+  padding: .5em 0;
+}
+
+.cast span, .genre span {
+  color: var(--highlight);
+  padding: 0.2em 0.5em 0.2em 0;
+}
+
+.genre {
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  main {
+    --header-height:4.5em;
+  }
+
+  .video-wrapper {
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  .global-container {
+    margin: 5em auto 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    position: relative;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .video-wrapper {
+    height: 40vh;
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+    display: block;
+  }
+
+  .cast span, .genre span {
+    cursor: pointer;
+  }
+}

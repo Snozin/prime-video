@@ -19,10 +19,10 @@ form a {
   width: 22em;
   min-width: 350px;
   border-radius: 0.5em;
-  box-shadow: 0.1em 0.1em 0.3em rgba(255, 255, 255, 0.1),
-    -0.1em -0.1em 0.3em rgba(255, 255, 255, 0.1),
-    -0.1em 0.1em 0.3em rgba(255, 255, 255, 0.1),
-    0.1em -0.1em 0.3em rgba(255, 255, 255, 0.1);
+  box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, 0.2),
+    -0.1em -0.1em 0.3em rgba(0, 0, 0, 0.2),
+    -0.1em 0.1em 0.3em rgba(0, 0, 0, 0.2),
+    0.1em -0.1em 0.3em rgba(0, 0, 0, 0.2);
 }
 
 .form-content {
@@ -59,10 +59,10 @@ form input {
   border-radius: 0.2em;
   color: white;
   background: rgba(15, 23, 30, 0.5);
-  box-shadow: inset 0.1em 0.1em rgba(255, 255, 255, 0.1),
-    inset -0.1em -0.1em rgba(255, 255, 255, 0.1),
-    inset -0.1em 0.1em rgba(255, 255, 255, 0.1),
-    inset 0.1em -0.1em rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0.1em 0.1em rgba(0, 0, 0, 0.1),
+    inset -0.1em -0.1em rgba(0, 0, 0, 0.1),
+    inset -0.1em 0.1em rgba(0, 0, 0, 0.1),
+    inset 0.1em -0.1em rgba(0, 0, 0, 0.1);
 }
 
 form button {

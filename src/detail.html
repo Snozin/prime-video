@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/detail.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <title>Prime Video</title>
+  </head>
+  <body>
+    <div class="global-container">
+      <header class="header">
+        <div class="header-container">
+          <a href="index.html">
+            <div class="main-logo"></div>
+          </a>
+
+          <div class="nav-container">
+            <div class="menu-label">
+              <label for="explore">Explorar</label>
+              <input type="checkbox" name="explore" id="explore" />
+
+              <div class="shadow-filter"></div>
+
+              <nav class="nav-subcontainer">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#novedades">Novedades</a></li>
+                  <li class="nav-item"><a href="#series">Series</a></li>
+                  <li class="nav-item"><a href="#peliculas">Películas</a></li>
+                  <li class="nav-item"><a href="#favoritos">Favoritos</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="slide-container">
+              <div class="search">
+                <input type="checkbox" class="search-checkbox" />
+                <input type="text" class="search-field" placeholder="Buscar" />
+              </div>
+
+              <div class="user-profile">
+                <a href="#">
+                  <div class="user-icon"><span>usuario &beta;</span></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="video-wrapper">
+          <video src="/media/video/gold.mp4" loop autoplay muted></video>
+        </div>
+        <div class="detail-wrapper">
+          <h1>La Fiebre del Bitcoin</h1>
+
+          <div class="detail-info">
+            <span>2025</span>
+            <span>18</span>
+          </div>
+
+          <div class="detail-synopsis">
+            <p>
+              El famoso inversor Warren Buffett comienza a perder su buen juicio
+              debido a su avanzada edad. Decide vender todos sus activos para
+              invertir en Bitcoins con la esperanza de dar un último gran golpe
+              antes de acabar su carrera.
+            </p>
+            <p>
+              Charlie Munger, amigo de toda la vida y socio de Warren tratará de
+              impedir que su colega cometa una locura, pero ambos nonagenarios
+              pierden los papeles y no recuerdan por qué discutían.
+            </p>
+          </div>
+
+          <div class="cast">
+            <h2>Reparto</h2>
+            <span>Warren Buffett</span>
+            <span>Charlie Munger</span>
+          </div>
+
+          <div class="genre">
+            <h2>Géneros</h2>
+            <span>Drama</span>
+            <span>Comedia</span>
+          </div>
+        </div>
+      </main>
+
+      <aside class="wrapper">
+        <div class="detail-wrapper">
+          <h2>Tal vez te interese</h2>
+          <ul class="flex-row">
+            <li>
+              <article class="card-container">
+                <a href="index.html"
+                  ><img src="/media/img/img-1.jpg" alt="demo img"
+                /></a>
+              </article>
+            </li>
+            <li>
+              <article class="card-container">
+                <a href="index.html"
+                  ><img src="/media/img/img-2.jpg" alt="demo img"
+                /></a>
+              </article>
+            </li>
+            <li>
+              <article class="card-container">
+                <a href="index.html"
+                  ><img src="/media/img/img-3.jpg" alt="demo img"
+                /></a>
+              </article>
+            </li>
+            <li>
+              <article class="card-container">
+                <a href="index.html"
+                  ><img src="/media/img/img-1.jpg" alt="demo img"
+                /></a>
+              </article>
+            </li>
+            <li>
+              <article class="card-container">
+                <a href="index.html"
+                  ><img src="/media/img/img-2.jpg" alt="demo img"
+                /></a>
+              </article>
+            </li>
+            <li>
+              <article class="card-container">
+                <a href="index.html"
+                  ><img src="/media/img/img-3.jpg" alt="demo img"
+                /></a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <footer class="footer">
+        <div class="main-logo"></div>
+        <div class="links">
+          <a href=""><span>Términos y Condiciones</span></a>
+          <a href=""><span>Ayuda</span></a>
+          <a href=""><span>&copy;MoD</span></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
