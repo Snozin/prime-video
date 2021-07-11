@@ -1,0 +1,23 @@
+@font-face {
+  font-family: Ember;
+  src: url(/fonts/Ember_Rg.ttf);
+}
+@font-face {
+  font-family: 'Ember Display';
+  src: url(/fonts/EmberDisplay_Rg.ttf);
+}
+
+:root {
+  --bg-main-color: rgb(15, 23, 30);
+  --highlight: rgb(80, 185, 230); 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-main-color);
+  color:white;
+  font-family: Ember, Arial, sans-serif;
+}
