@@ -1,10 +1,10 @@
 @font-face {
   font-family: Ember;
-  src: url(fonts/Ember_Rg.ttf);
+  src: url(../fonts/Ember_Rg.ttf);
 }
 @font-face {
   font-family: 'Ember Display';
-  src: url(fonts/EmberDisplay_Rg.ttf);
+  src: url(../fonts/EmberDisplay_Rg.ttf);
 }
 
 :root {

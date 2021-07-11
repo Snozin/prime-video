@@ -29,7 +29,7 @@
 
 .nav-container #explore::after {
   content: "";
-  background: url(media/icons/arrow-down.svg) center;
+  background: url(../media/icons/arrow-down.svg) center;
   background-size: cover;
   position: absolute;
   display: inline-block;
@@ -130,7 +130,7 @@
 
 .search .search-checkbox::after {
   content: "";
-  background: url(media/icons/lupa.svg);
+  background: url(../media/icons/lupa.svg);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -164,7 +164,7 @@
 
 .user-profile .user-icon::after {
   content: "";
-  background: url(media/icons/usuario.svg) no-repeat;
+  background: url(../media/icons/usuario.svg) no-repeat;
   opacity: var(--icon-opacity);
   position: absolute;
   width: 100%;
